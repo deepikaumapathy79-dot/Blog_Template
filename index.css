@@ -1,0 +1,494 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color:rgb(243, 124, 144);
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://png.pngtree.com/background/20250206/original/pngtree-pink-tulips-from-above-picture-image_13453760.jpg') no-repeat center center/cover;
+    color:darkmagenta;
+    text-align: center;
+    padding: 100px 0;
+    
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-bottom: 200px;
+}
+
+.hero .btn {
+    padding: 10px 25px;
+    background-color: #fff;
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+
+btn{
+    position: absolute;
+    bottom:-75px;
+
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem;
+    background:rgb(255, 51, 153,  .05);
+}
+.heading span{
+
+    color:darkorchid;
+}
+
+
+.about {
+    padding: 40px 5%;
+}
+
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.about-box {
+    flex: 1;
+}
+
+.about-box h2 {
+    font-size: 32px;   /* munadi 45px irundha kammi pannunga */
+    margin-bottom: 15px;
+}
+
+.about-box p {
+    font-size: 18px;   /* munadi 24px irundha kammi pannunga */
+    line-height: 1.6;
+}
+
+.about-box h3 {
+    font-size: 24px;   /* Best Flower Sellers size */
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-box h2 {
+        font-size: 26px;
+    }
+
+    .about-box h3 {
+        font-size: 20px;
+    }
+
+    .about-box p {
+        font-size: 16px;
+    }
+}
+
+
+.btn:hover {
+    background: #e84393;
+}
+
+
+.icons-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 5%;
+    background: #eee;
+}
+
+.icon-box{
+    background: #fff;
+    width: 250px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+}
+
+.icon-box i{
+    font-size: 35px;
+    color: #333;
+}
+
+.icon-box h3{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.icon-box span{
+    font-size: 14px;
+    color: #777;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .icon-box{
+        width: 100%;
+    }
+}
+
+
+.review{
+    padding: 50px 8%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    background: #fceef4;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.heading span{
+    color: #e84393;
+}
+
+.review-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review-box{
+    flex: 1 1 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.stars{
+    color: #e84393;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.review-box p{
+    color: #777;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.user img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info h3{
+    font-size: 22px;
+    color: #333;
+}
+
+.user-info span{
+    color: #999;
+    font-size: 14px;
+}
+
+.quote{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-size: 70px;
+    color: #eee;
+}
+
+@media(max-width:768px){
+    .heading{
+        font-size: 2rem;
+    }
+
+    .review-box{
+        flex: 1 1 100%;
+    }
+}
+/*about section ends*/
+/* Bouquets Section */
+.bouquets {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.bouquets h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.bouquet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.bouquet-card {
+    background-color: #fff5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.bouquet-card:hover {
+    transform: translateY(-5px);
+}
+
+.bouquet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.bouquet-card h3 {
+    margin: 15px 0 10px;
+    color: #ff6f61;
+}
+
+.bouquet-card p {
+    padding: 0 15px 15px;
+    color: #555;
+}
+
+.btns{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cart-btn{
+    width: 150px;
+    height: 35px;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cart-btn:hover{
+    background: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.heart-btn{
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.heart-btn:hover{
+    background: red;
+    color: white;
+    transition: 0.3s;
+    padding: 3px;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#fff;
+}
+
+.contact{
+    padding:50px 10%;
+}
+
+.contact h1{
+    text-align:center;
+    background:#ffe6ef;
+    color:#ff3399;
+    padding:15px;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.contact h1 span{
+    color:#000;
+}
+
+.row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+form{
+    flex:1 1 400px;
+}
+
+.box{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+}
+
+.btn{
+    background:#222;
+    color:#fff;
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#ff3399;
+}
+
+.image{
+    flex:1 1 400px;
+    text-align:center;
+}
+
+.image img{
+    width:100%;
+    max-width:500px;
+}
+
+
+
+/* Footer */
+
+.footer{
+    background:#fff;
+    padding:40px 8%;
+}
+
+.footer .box-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.footer .box h3{
+    font-size:32px;
+    color:#333;
+    margin-bottom:15px;
+}
+
+.footer .box a{
+    display:block;
+    font-size:18px;
+    color:#666;
+    text-decoration:none;
+    padding:8px 0;
+}
+
+.footer .box a:hover{
+    color:#e84393;
+}
+
+.payment-img img{
+    width:180px;
+    margin-top:10px;
+}
+
+.credit{
+    text-align:center;
+    margin-top:30px;
+    padding-top:20px;
+    border-top:1px solid #ddd;
+    font-size:22px;
+    color:#333;
+}
+
+.credit span{
+    color:#e84393;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
